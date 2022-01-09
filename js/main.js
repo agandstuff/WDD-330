@@ -1,4 +1,4 @@
-// Code for Array List
+// Code for Array List - Table of Contents
 const linksList = [
     {
         label: "Week 1 Notes",

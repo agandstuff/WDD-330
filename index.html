@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link href="style_index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Montserrat">
+    <script type="text/javascript" src="/js/main.js"></script>
 </head>
 
 <body>
@@ -21,16 +22,25 @@
         <main>
             <h2>WDD330: Online Portfolio</h2>
             <h3>Block 1</h3>
-            <ul id="links"></ul>
+            <ul id="links">
+
+            </ul>
         </main>
         <footer>
-            &copy; <span id="current-year"></span> | Amanda Stokes | Colorado | <a href="https://www.byui.edu/online" target="blank">BYUI Online Learning</a>
-            <br>
-            Last Updated: 
-            <span id="update-time"></span>
+            Amanda Stokes | Colorado | <a href="https://www.byui.edu/online" target="blank">BYUI Online Learning</a>
         </footer>
     </div>
-    <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script type="text/javascript">
+        var myList = document.getElementById("links");
+
+        for (var i = 0; i <= linksList.length - 1; i++) {
+            var li = document.createElement("li");
+            var a = document.createElement("a");
+            a.innerText = linksList[i].label;
+            a.href = linksList[i].url;
+            li.appendChild(a);
+            myList.appendChild(li);
+        }
+    </script>
 </body>
 </html>

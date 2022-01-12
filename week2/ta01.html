@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week One Team Activity</title>
+    <meta name="description" content="This is team's 6 week one activity.">
+    <script>
+        function firstFunction() {
+            const n = document.getElementById('keyboardInput').value;
+
+            let value = 0;
+            for (i = 0; i <= n; i++) {
+                value += i;
+            }
+
+            document.getElementById('output').innerHTML = value;
+            return parseInt(n);
+        }
+
+        function secondFunction(value) {
+            let x = document.getElementById('keyboardInput2').value;
+            // let n = document.getElementById('keyboardInput1').value;
+            let sum = value + parseInt(x);
+            // let sum = value + +x;
+            document.getElementById('outputtwo').innerHTML = sum;
+        }
+
+        const subtract = function (value) {
+            let x = document.getElementById('keyboardInput2').value;
+            // let n = document.getElementById('keyboardInput1').value;
+            let sub = value - parseInt(x);
+            // let sum = value + +x;
+            document.getElementById('subtract').innerHTML = sub;
+        }
+
+        const multiply = (value) => {
+            let x = document.getElementById('keyboardInput2').value;
+            let mul = value * parseInt(x);
+            document.getElementById('multiply').innerHTML = mul;
+        }
+
+        const divide = (value) => {
+            let x = document.getElementById('keyboardInput2').value;
+            let div = value / parseInt(x);
+            document.getElementById('division').innerHTML = div;
+        }
+        console.log(n);
+        console.log(sum);
+        console.log(sub);
+        console.log(mul);
+        console.log(div);
+    </script>
+</head>
+
+<body>
+    <h1>Week One Team Activity</h1>
+
+    <label for="ta01"></label>
+    <input type="text" id="keyboardInput" name="ta01">
+    <button type="button" onclick="firstFunction()">Run Function</button>
+    <input type="text" id="keyboardInput2" name="ta">
+    <button type="button" onclick="secondFunction(firstFunction())">+</button>
+    <button type="button" onclick="subtract(firstFunction())">-</button>
+    <button type="button" onclick="multiply(firstFunction())">*</button>
+    <button type="button" onclick="divide(firstFunction())">/</button>
+    <div id="output"></div>
+    <div id="outputtwo"></div>
+    <div id="subtract"></div>
+    <div id="multiply"></div>
+    <div id="division"></div>
+</body>
+
+</html>

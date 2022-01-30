@@ -14,6 +14,6 @@ const linksList = [
     },
     {
         label: "Week 4 Notes & Assignments",
-        url: "week4/index."
+        url: "week4/index.html"
     }
 ]

@@ -1,0 +1,88 @@
+/* Background image: Photo by <a href="https://unsplash.com/@cullenzh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Cullen Zh</a> on <a href="https://unsplash.com/s/photos/lotus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: lightseagreen;
+    background-image: url("../../images/lotus_pond.jpg");
+    background-size: cover;
+}
+
+main {
+    margin: auto;
+    margin-top: 4rem;
+    padding: 2rem;
+    box-shadow: 5px 5px 10px 5px gray;
+    max-width: 500px;
+    max-height: 75%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    color: black;
+    opacity: 0.7;
+}
+
+#gameboard {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-top: 2rem;
+    opacity: 1.0;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    border: 3px solid black;
+    caret-color: transparent;
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+button {
+    padding: 5px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px darkseagreen;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3) {
+    border-top: none;
+}
+
+.box:nth-child(3),
+.box:nth-child(6),
+.box:nth-child(9) {
+    border-right: none;
+}
+
+.box:nth-child(7),
+.box:nth-child(8),
+.box:nth-child(9) {
+    border-bottom: none;
+}
+
+.box:nth-child(1),
+.box:nth-child(4),
+.box:nth-child(7) {
+    border-left: none;
+}

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(32, 20, 20);
+    background-image: url('./bookcase.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Ubuntu','OpenSans', sans-serif;
+    text-align: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgb(248, 239, 227);
+    font-size: 1.5rem;
+    min-width: 60%;
+    max-width: 600px;
+    margin: auto;
+    opacity: 0.95;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 5px 5px 10px 0 black;
+}
+
+form {
+    margin: auto;
+    margin-top: 45px;
+    font-size: 0;
+}
+
+form input,
+form button {
+    padding: .5rem;
+    background: white;
+    border: none;
+    font-size: 1.4rem;
+    box-shadow: 5px 5px 10px 0 black;
+}
+
+form input {
+    border-radius: 5px 0 0 5px;
+}
+
+form button {
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.library {
+    background-color: rgb(248, 239, 227);
+    margin: auto;
+    margin-top: 45px;
+    min-width: 40%;
+    max-width: 300px;
+    opacity: .95;
+    border-radius: 5px;
+    padding: 0.5rem;
+    box-shadow: 5px 5px 10px 0 black;
+    text-align: center;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+form button:hover {
+    background: #ff6f47;
+    color: white;
+}
+
+.book-list {
+    min-width: 40%;
+    list-style: none;
+}
+
+.book {
+    margin: 0.5rem;
+    background: white;
+    font-size: 1.5rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.filter-list {
+    padding: 1rem;
+}
+.book li {
+    flex: 1;
+}
+
+.trash-btn,
+.read-btn {
+    color: black;
+    background: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.book-item {
+    padding: 0rem 0.5rem;
+}
+
+.fall {
+    transform: translateY(10rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+.read {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.select {
+    margin: 10px;
+    overflow: hidden;
+}
+
+select {
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+    cursor: pointer;
+    background-color: rgb(248, 239, 227);
+    border-radius: 3px;
+    border-style: none;
+    margin: 0;
+}

@@ -1,0 +1,25 @@
+img {
+    -webkit-transform: translate(45px,-45px); /* iOS8, Android 
+    ↵4.4.3, BB10 */
+    -ms-transform: translate(45px,-45px); /* IE9 only */
+    transform: translate(45px,-25px);
+    transform: scale(1.5, 0.25);
+}
+
+.ad h2 span {
+    font-size: 30px;
+    color: #999999;
+}
+
+.ad:hover {
+    color: #484848;
+    transform: translate(40px);
+    transform: rotate(10deg) translateX(200px) scale(1.5);
+    transform: skew(15deg, 4deg);
+}
+
+.translate {
+    position: relative;
+    top: 200px;
+    left: 200px;
+}

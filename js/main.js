@@ -35,5 +35,9 @@ const linksList = [
     {
         label: "Week 9 Notes & Assignments",
         url: "week9/index.html"
+    },
+    {
+        label: "Week 10 Notes & Assignments",
+        url: "week10/index.html"
     }
 ]

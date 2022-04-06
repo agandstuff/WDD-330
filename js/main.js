@@ -39,5 +39,13 @@ const linksList = [
     {
         label: "Week 10 Notes & Assignments",
         url: "week10/index.html"
+    },
+    {
+        label: "Week 11 Assignment",
+        url: "week11/index.html"
+    },
+    {
+        label: "Block 2 Challenge Assignment",
+        url: ""
     }
 ]

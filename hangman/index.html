@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Hangman</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Alphabet Hangman</h1>
+
+        <!-- Button to reset game -->
+        <div>
+            <button class="reset" onClick="reset()">Start Game</button>
+        </div>
+        
+        <svg height="250" width="200" class="hangman-container">
+            <!-- Hangman Stand -->
+            <line x1="60" y1="20" x2="140" y2="20" />
+            <line x1="140" y1="20" x2="140" y2="50" />
+            <line x1="60" y1="20" x2="60" y2="230" />
+            <line x1="20" y1="230" x2="100" y2="230" />
+            <line x1="20" y1="230" x2="60" y2="200"/>
+
+            <!-- Head -->
+            <circle cx="140" cy="70" r="20" class="body-part" />
+            <!-- Body -->
+            <line x1="140" y1="90" x2="140" y2="150" class="body-part" />
+            <!-- Arms -->
+            <line x1="140" y1="120" x2="120" y2="100" class="body-part" />
+            <line x1="140" y1="120" x2="160" y2="100" class="body-part" />
+            <!-- Legs -->
+            <line x1="140" y1="150" x2="120" y2="180" class="body-part" />
+            <line x1="140" y1="150" x2="160" y2="180" class="body-part" />
+        </svg>
+
+        <!-- Clue given to user to help guess answer -->
+        <div class="clue">Clue: <span id="clue"></span></div>
+        <!-- This paragraph will be filled with spaces indicating the word to be guessed through javascript function -->
+        <p class="word" id="word"></p>
+
+        <!-- Container holding buttons for keyboard -->
+        <div class="keyboard" id="keyboard"></div>
+
+            <!-- Container displaying how many wrong guesses are left -->
+        <div class="wrong-container">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+
+        <!-- Pop up for win/lose message -->
+        <div class="popup-container" id="popup-container">
+            <div class="popup">
+                <h2 id="result"></h2>
+                <button onClick="reset()">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(248, 248, 244);
+    background-image: url('./background.png');
+    background-repeat: repeat;
+    color: #1d252b;
+    font-family: 'Schoolbell', Arial, cursive;
+    text-align: center;
+}
+
+h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(360deg, rgba(227,23,10,1) 20%, rgba(57,160,237,1) 32%, rgba(68,255,210,1) 50%, rgba(247,179,43,1) 68%, rgba(97,63,117,1) 80%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.game-container {
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 7px;
+    box-shadow: 0 0px 5px lightgray;
+    
+}
+
+.hangman-container {
+    fill: transparent;
+    stroke: #1d252b;
+    stroke-width: 4px;
+    stroke-linecap: round;
+    margin-top: 20px;
+    margin-left: -80px;
+}
+
+.body-part {
+    display: none;
+}
+
+.reset {
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Schoolbell", Arial, cursive;
+    background: #44ffd2;
+    color: #1d252b;
+    border-radius: 7px;
+    box-shadow: 0 7px 0px #2ba88b;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+    padding: 20px 25px;
+    top: 0;
+}
+
+.reset:active {
+    top: 3px;
+    box-shadow: 0 2px 0px #3fb1b5;
+    transition: all .2s;
+}
+
+.wrong-container {
+    text-align: center;
+    font-size: 24px;
+    padding: 30px;
+}
+
+.wrong-container span {
+    font-size: 24px;
+}
+
+.word {
+    text-align: center;
+    font-size: 24px;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 380px;
+    max-width: 380px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.keyboard button {
+    font-size: 24px;
+    min-width: 40px;
+    margin: 5px;
+}
+
+.letter {
+    border-bottom: 3px solid #2980b9;
+    display: inline-flex;
+    font-size: 250px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    height: 100px;
+    width: 20px;
+}
+
+.popup-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.popup {
+    background: #39a0ed;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    margin-left: -75px;
+}
+
+.popup button {
+    font-family: "Schoolbell", Arial, cursive;
+    cursor: pointer;
+    background: #b878dd;
+    color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 7px 0px #613f75;
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+    top: 0;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+  
+.popup button:active {
+    top: 3px;
+    box-shadow: 0 2px 0px #613f75;
+    transition: all .2s;
+}
+
+.clue, 
+span {
+    font-size: 24px;
+}

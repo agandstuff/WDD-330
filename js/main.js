@@ -46,6 +46,6 @@ const linksList = [
     },
     {
         label: "Block 2 Challenge Assignment",
-        url: ""
+        url: "hangman/index.html"
     }
 ]
